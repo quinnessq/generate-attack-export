@@ -1,0 +1,14 @@
+spring:
+  application.name:  transform
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      indent_output: false
+  datasource:
+    url: jdbc:mariadb://localhost:3306/mcse_thesis?createDatabaseIfNotExist=true
+    username: root
+    password: rootpass
+    driver-class-name: org.mariadb.jdbc.Driver
+  data:
+    jdbc:
+      dialect: maria
