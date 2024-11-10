@@ -12,7 +12,7 @@ class ProcessDataForTraining(
 
     @PostConstruct
     fun init() {
-        generateAttack()
+        //generateAttack()
         saveFiles()
     }
 
@@ -21,7 +21,7 @@ class ProcessDataForTraining(
     }
 
     private fun saveFiles() {
-
+        saveDataForTraining.saveData()
     }
 
 }
