@@ -55,7 +55,7 @@ data class Entry(
         val dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
         val dateString = dateTimeFormatter.format(date)
         return """
-            $dateString,$time,$malicious,${connection?.remoteIp},${connection?.remotePort},${connection?.connectionId},${connection?.connectionTime},${upstream?.upstreamResponseTime},${upstream?.upstreamResponseLength},${upstream?.upstreamStatus},${upstream?.upstreamConnectionTime},${response?.responseBodySize},${response?.responseTotalSize},${response?.responseStatus},${response?.responseTime}, ${request?.requestLength},${request?.requestContentLength},"${request?.requestContentType}","${request?.requestMethod}","${request?.requestUri}","${request?.referrer}","${request?.protocol}","${request?.userAgent}""
+            $dateString,$time,$malicious,${connection?.remoteIp},${connection?.remotePort},${connection?.connectionId},${connection?.connectionTime},${upstream?.upstreamResponseTime},${upstream?.upstreamResponseLength},${upstream?.upstreamStatus},${upstream?.upstreamConnectionTime},${response?.responseBodySize},${response?.responseTotalSize},${response?.responseStatus},${response?.responseTime}, ${request?.requestLength},${request?.requestContentLength},"${request?.requestContentType}","${request?.requestMethod}","${request?.requestUri}","${request?.referrer}","${request?.protocol}","${request?.userAgent}"
         """.trimIndent()
     }
 }
